@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "8ecc49fa02980201",
+    "type": "split",
+    "children": [
+      {
+        "id": "58597df8979d1ac2",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Components and Flow.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42a7316550a24bd5",
+    "type": "split",
+    "children": [
+      {
+        "id": "73e9fdc4f1ae8254",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6418b6628dde2fc0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a249f81b49f5eed6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6a3c8c6c1130333e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d00557110f7478eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6794fd2b473a6511",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Components and Flow.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "58597df8979d1ac2",
+  "lastOpenFiles": [
+    "Components and Flow.md",
+    "State Management.md",
+    "CSS Design Plan.md"
+  ]
+}
