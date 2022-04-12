@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Components and Flow.md",
+            "file": "State Management.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Components and Flow.md",
+                "file": "State Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +89,8 @@
   },
   "active": "58597df8979d1ac2",
   "lastOpenFiles": [
-    "Components and Flow.md",
     "State Management.md",
-    "CSS Design Plan.md"
+    "CSS Design Plan.md",
+    "Components and Flow.md"
   ]
 }

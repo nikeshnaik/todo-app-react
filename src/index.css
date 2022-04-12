@@ -1,13 +1,39 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+:root {
+
+  --primary-Bright-Blue: hsl(220, 98%, 61%);
+  --primary-Check-Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  --light-neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+  --light-neutral-Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --light-neutral-Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --light-neutral-Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --light-neutral-Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  --dark-neutral-Very-Dark-Blue: hsl(235, 21%, 11%);
+  --dark-neutral-Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --dark-neutral-Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --dark-neutral-Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --dark-neutral-Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --dark-neutral-Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --dark-neutral-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+
 }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Josefin Sans';
+}
+
+
+.light_theme {}

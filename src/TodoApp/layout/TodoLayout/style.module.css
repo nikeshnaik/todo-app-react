@@ -1,0 +1,66 @@
+.container {
+    background-color: wheat;
+    display: flex;
+    width: 54.1rem;
+    /* height: 439 + 24 + 64 + 40 + 48; */
+    height: 61.5rem;
+    flex-direction: column;
+
+}
+
+
+.layout_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    height: 4.8rem;
+    padding: 1rem;
+}
+
+.layout_header>h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 1.5rem;
+    text-align: left;
+    color: white;
+}
+
+.theme_icon {
+    width: 2.511rem;
+    height: 2.6rem;
+}
+
+.inputBox {
+    margin-top: 4rem;
+    width: 54rem;
+    height: 6.4rem;
+    padding: 2rem 2.4rem 2rem 2.4rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.4rem;
+    background-color: white;
+    box-shadow: 0rem 3.5rem 5rem -1.5rem rgba(194, 195, 214, 0.5);
+    border-radius: 0.5rem;
+}
+
+.inputRadio {
+    width: 2.4rem;
+    height: 2.4rem;
+    border: 1rem solid #E3E4F1;
+    border-style: none;
+}
+
+.inputText {
+    width: inherit;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8prem;
+    letter-spacing: -0.25px;
+    text-align: left;
+    font-family: "Josefin Sans";
+}
