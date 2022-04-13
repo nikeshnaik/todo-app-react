@@ -15,10 +15,16 @@ function ToDoApp() {
                 {
                     status: 'active/completed',
                     description: 'pick up groceries'
+                },
+                {
+                    status: 'active/completed',
+                    description: 'pick up groceries'
                 }
+
 
             ],
             filter: 'all/active/completed',
+            dragStartIndex: 0
         }
     )
 

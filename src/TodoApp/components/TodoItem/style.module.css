@@ -1,0 +1,31 @@
+.todo_description {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: -0.25px;
+    color: var(--light-neutral-Very-Dark-Grayish-Blue);
+
+}
+
+.todoitem {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.4rem;
+    padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+    width: 54rem;
+    height: 2.4rem;
+    align-items: center;
+    border-bottom: 0.2rem solid var(--light-neutral-Light-Grayish-Blue);
+}
+
+input[type="radio"] {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.crossicon {
+    display: flex;
+    margin-left: auto;
+}
