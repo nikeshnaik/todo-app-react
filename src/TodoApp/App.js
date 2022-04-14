@@ -9,22 +9,49 @@ function ToDoApp() {
             theme: 'light',
             todolist: [
                 {
-                    status: 'active/completed',
+                    status: 'active',
                     description: 'jog for 10mins'
                 },
                 {
-                    status: 'active/completed',
+                    status: 'active',
                     description: 'pick up groceries'
                 },
                 {
-                    status: 'active/completed',
+                    status: 'completed',
+                    description: 'workout at 7am'
+                },
+                {
+                    status: 'active',
+                    description: "Errand at 10pm"
+                },
+                {
+                    status: 'active',
+                    description: 'jog for 10mins'
+                },
+                {
+                    status: 'active',
                     description: 'pick up groceries'
+                },
+                {
+                    status: 'completed',
+                    description: 'workout at 7am'
+                },
+                {
+                    status: 'active',
+                    description: "Errand at 10pm"
+                },
+                {
+                    status: 'active',
+                    description: 'jog for 10mins'
+                },
+                {
+                    status: 'active',
+                    description: "Errand at 10pm"
                 }
 
-
             ],
-            filter: 'all/active/completed',
-            dragStartIndex: 0
+            filter: 'active',
+            device: "desktop"
         }
     )
 

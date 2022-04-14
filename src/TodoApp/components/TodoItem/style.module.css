@@ -18,6 +18,7 @@
     height: 2.4rem;
     align-items: center;
     border-bottom: 0.2rem solid var(--light-neutral-Light-Grayish-Blue);
+    background-color: var(--light-neutral-Very-Light-Gray);
 }
 
 input[type="radio"] {

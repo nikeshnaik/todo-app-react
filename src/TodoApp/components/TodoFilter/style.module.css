@@ -1,0 +1,83 @@
+.filter_box {
+
+    width: 54rem;
+    height: 5.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    column-gap: 1.8rem;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.194444px;
+    color: #9495A5;
+    cursor: pointer;
+}
+
+.all {
+    color: #9495A5
+}
+
+.all:hover {
+    color: #494C6B;
+}
+
+.active {
+    color: #9495A5
+}
+
+.active:hover {
+    color: #494C6B
+}
+
+.completed {
+    color: #9495A5
+}
+
+.completed:hover {
+    color: #494C6B;
+}
+
+
+.all:focus-within {
+    color: #3A7CFD;
+}
+
+.active:focus-within {
+    color: #3A7CFD;
+
+}
+
+.completed:focus-within {
+    color: #3A7CFD;
+}
+
+
+.item_count,
+.clear_completed {
+    margin: auto;
+}
+
+
+.upper_filter {
+    width: 54rem;
+    height: 5.4rem;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: -0.194444px;
+    color: #9495A5;
+    cursor: pointer;
+}
