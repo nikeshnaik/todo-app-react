@@ -69,8 +69,6 @@ function ToDoApp() {
     )
 
 
-    document.body.classList.toggle(state.theme)
-
     return (
         <div className={`${styles.app} ${state.theme === 'dark' ? styles.dark_theme : styles.light_theme}`}>
             <ToDoLayout state={state} setState={setState}>
