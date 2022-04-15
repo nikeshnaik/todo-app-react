@@ -122,6 +122,7 @@ function ToDoLayout(props) {
 
             <TodoFilter state={props.state} setState={props.setState} todolist={todolist} setTodolist={setTodolist} item_count={todoList_filtered.length} />
 
+            <p className={styles.drag_note}>Drag and drop to reorder list</p>
         </div >
     );
 

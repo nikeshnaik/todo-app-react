@@ -20,7 +20,11 @@
     border-bottom: 0.00085rem solid var(--item-border-bottom);
     background-color: var(--todo-item-background);
     cursor: pointer;
+}
 
+.todoitem:nth-child(1) {
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
 }
 
 .inputRadio {
