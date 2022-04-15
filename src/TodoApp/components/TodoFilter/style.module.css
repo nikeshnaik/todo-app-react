@@ -43,16 +43,16 @@
 }
 
 
-.all:focus-within {
+.all_active {
     color: #3A7CFD;
 }
 
-.active:focus-within {
+.active_active {
     color: #3A7CFD;
 
 }
 
-.completed:focus-within {
+.completed_active {
     color: #3A7CFD;
 }
 

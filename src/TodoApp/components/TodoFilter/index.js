@@ -1,8 +1,11 @@
+import { useState } from "react"
 import styles from "./style.module.css"
 
 function TodoFilter(props) {
 
     let completed_task_length = props.state.todolist.filter((element) => element.status === "completed").length
+
+    let [filterState, setFilterState] = useState([true, false, false])
 
     function handleOnClick(event) {
 
@@ -10,12 +13,14 @@ function TodoFilter(props) {
             console.log(event.currentTarget)
             let oldState = props.state
             oldState.filter = "all"
+            setFilterState([true, false, false])
             props.setState({ ...oldState })
         }
         else if (event.currentTarget.className === styles.active) {
             console.log(event.currentTarget)
             let oldState = props.state
             oldState.filter = "active"
+            setFilterState([false, true, false])
             props.setState({ ...oldState })
 
         }
@@ -23,6 +28,7 @@ function TodoFilter(props) {
             console.log(event.currentTarget)
             let oldState = props.state
             oldState.filter = "completed"
+            setFilterState([false, false, true])
             props.setState({ ...oldState })
         }
         else if (event.currentTarget.className === styles.clear_completed) {
@@ -43,13 +49,19 @@ function TodoFilter(props) {
 
     if (props.state.device === "desktop") {
 
+        let all_filter_style = filterState[0] ? `${styles.all_active} ${styles.all}` : styles.all
+
+        let completed_filter_style = filterState[2] ? `${styles.completed_active} ${styles.completed}` : styles.completed
+
+        let active_filter_style = filterState[1] ? `${styles.active_active} ${styles.active}` : styles.active
+
         return (
 
             <div className={styles.filter_box}>
                 <span tabIndex={0} className={styles.item_count}>{props.item_count} item left</span>
-                <span tabIndex={1} className={styles.all} onClick={handleOnClick}>All</span>
-                <span tabIndex={2} className={styles.active} onClick={handleOnClick}>Active</span>
-                <span tabIndex={3} className={styles.completed} onClick={handleOnClick}>Completed</span>
+                <span tabIndex={1} className={all_filter_style} onClick={handleOnClick}>All</span>
+                <span tabIndex={2} className={active_filter_style} onClick={handleOnClick}>Active</span>
+                <span tabIndex={3} className={completed_filter_style} onClick={handleOnClick}>Completed</span>
                 {completed_task_length > 0 ? <a className={styles.clear_completed} onClick={handleOnClick}>Clear Completed</a> :
                     < a className={styles.clear_completed} >Clear Completed</a>}
             </div >

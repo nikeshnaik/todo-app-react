@@ -19,14 +19,50 @@
     align-items: center;
     border-bottom: 0.2rem solid var(--light-neutral-Light-Grayish-Blue);
     background-color: var(--light-neutral-Very-Light-Gray);
+    cursor: pointer;
+
 }
 
-input[type="radio"] {
-    width: 2.4rem;
-    height: 2.4rem;
+.inputRadio {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border-color: var(--light-neutral-Light-Grayish-Blue);
+    border-width: 0.1rem;
+    border-style: solid;
+    cursor: pointer;
+
 }
+
+.inputRadio_checked {
+    background-image: url(../../../assets/icon-check.svg), var(--primary-Check-Background);
+    background-repeat: no-repeat no-repeat;
+    background-size: 1.5rem 1.5rem 2.2rem 2.2rem;
+    background-position: center center;
+}
+
+.inputRadio:hover {
+    border-color: #8d92f6;
+}
+
 
 .crossicon {
     display: flex;
     margin-left: auto;
+}
+
+.text_description_completed {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    /* identical to box height */
+
+    letter-spacing: -0.25px;
+    text-decoration-line: line-through;
+
+    color: var(--light-neutral-Light-Grayish-Blue);
+    /* text-decoration: line-through; */
+    animation: 0s 2s;
 }
