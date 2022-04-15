@@ -24,7 +24,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Link](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution Link](https://www.frontendmentor.io/solutions/todo-with-react-and-css-modules-with-theme-change-and-reorder-animae-SJasxMD4c
 - Live Site URL: [https://dynamic-naiad-fcc6ab.netlify.app/](https://dynamic-naiad-fcc6ab.netlify.app/)
 
 ### The challenge
