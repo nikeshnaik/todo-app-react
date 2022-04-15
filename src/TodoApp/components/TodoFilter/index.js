@@ -57,11 +57,11 @@ function TodoFilter(props) {
 
         return (
 
-            <div className={styles.filter_box}>
+            <div role="menu" className={styles.filter_box}>
                 <span tabIndex={0} className={styles.item_count}>{props.item_count} item left</span>
-                <span tabIndex={1} className={all_filter_style} onClick={handleOnClick}>All</span>
-                <span tabIndex={2} className={active_filter_style} onClick={handleOnClick}>Active</span>
-                <span tabIndex={3} className={completed_filter_style} onClick={handleOnClick}>Completed</span>
+                <span tabIndex={0} className={all_filter_style} onClick={handleOnClick}>All</span>
+                <span tabIndex={0} className={active_filter_style} onClick={handleOnClick}>Active</span>
+                <span tabIndex={0} className={completed_filter_style} onClick={handleOnClick}>Completed</span>
                 {completed_task_length > 0 ? <a className={styles.clear_completed} onClick={handleOnClick}>Clear Completed</a> :
                     < a className={styles.clear_completed} >Clear Completed</a>}
             </div >

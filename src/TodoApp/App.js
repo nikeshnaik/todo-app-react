@@ -12,48 +12,38 @@ function ToDoApp() {
             todolist: [
                 {
                     id: uuidv4(),
-                    status: 'active',
-                    description: 'jog for 10mins'
-                },
-                {
-                    id: uuidv4(),
-                    status: 'active',
-                    description: 'pick up groceries'
-                },
-                {
-                    id: uuidv4(),
                     status: 'completed',
-                    description: 'workout at 7am'
+                    description: 'Jog around the park 3x'
                 },
                 {
                     id: uuidv4(),
                     status: 'active',
-                    description: "Errand at 10pm"
+                    description: '10 minutes meditation'
                 },
                 {
                     id: uuidv4(),
                     status: 'active',
-                    description: 'jog for 10mins'
+                    description: 'Read for 1 hour'
                 },
                 {
                     id: uuidv4(),
                     status: 'active',
-                    description: 'pick up groceries'
-                },
-                {
-                    id: uuidv4(),
-                    status: 'completed',
-                    description: 'workout at 7am'
+                    description: "Pick up groceries"
                 },
                 {
                     id: uuidv4(),
                     status: 'active',
-                    description: "Errand at 10pm"
+                    description: 'Complete Todo App on Frontend Mentor'
                 },
                 {
                     id: uuidv4(),
                     status: 'active',
-                    description: 'jog for 10mins'
+                    description: "Long Drive Date"
+                },
+                {
+                    id: uuidv4(),
+                    status: 'active',
+                    description: 'Todo React App Frontedn Mentor Submit solution'
                 },
                 {
 

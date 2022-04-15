@@ -93,12 +93,12 @@ function ToDoLayout(props) {
     return (
         <div className={styles.container}>
             <div className={styles.layout_header}>
-                <h2>TODO</h2>
+                <h2 role="heading">TODO</h2>
                 <div className={styles.theme_icon} onClick={handleThemeChange}>
                     {props.state.theme === "dark" ? <ThemeMoonIcon /> : <ThemeSunIcon />}
                 </div>
             </div>
-            <div className={styles.inputBox} onKeyDown={handleInputBox} onClick={handleCheckBox}>
+            <div role="input" className={styles.inputBox} onKeyDown={handleInputBox} onClick={handleCheckBox}>
                 <div tabIndex={0} className={showCheckIcon ? `${styles.inputRadio_checked} ${styles.inputRadio}` : styles.inputRadio}></div>
                 <input type="text" className={styles.inputText} data-checked="false" placeholder="Create a new Todo.." />
             </div>
@@ -109,6 +109,7 @@ function ToDoLayout(props) {
                 delay={1}
                 invertSwap={true}
                 direction={"vertical"}
+                role="listbox"
 
                 className={styles.todoItemContainer} list={todolist} setList={setTodolist}>
                 {todoList_filtered.map((element, idx) => {
@@ -122,7 +123,7 @@ function ToDoLayout(props) {
 
             <TodoFilter state={props.state} setState={props.setState} todolist={todolist} setTodolist={setTodolist} item_count={todoList_filtered.length} />
 
-            <p className={styles.drag_note}>Drag and drop to reorder list</p>
+            <p role="note" className={styles.drag_note}>Drag and drop to reorder list</p>
         </div >
     );
 

@@ -66,7 +66,7 @@ function TodoItem(props) {
 
     return (
         <div draggable data-index={props.todoId} className={styles.todoitem} onClick={handleClick}>
-            <div tabIndex={props.todoId} className={inputRadio_styles} data-index={props.todoId}></div>
+            <div tabIndex={0} className={inputRadio_styles} data-index={props.todoId}></div>
             <span className={textDecoration ? `${styles.todo_description} ${styles.text_description_completed}` : styles.todo_description} > {props.description}</span>
             <span className={styles.crossicon}>{showCrossBtn ? <CrossIcon /> : null}</span>
         </div >
