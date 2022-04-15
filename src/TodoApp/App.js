@@ -5,7 +5,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 function ToDoApp() {
 
-    let react_id = useId()
 
     const [state, setState] = useState(
         {
@@ -69,6 +68,8 @@ function ToDoApp() {
         }
     )
 
+
+    document.body.classList.toggle(state.theme)
 
     return (
         <div className={`${styles.app} ${state.theme === 'dark' ? styles.dark_theme : styles.light_theme}`}>

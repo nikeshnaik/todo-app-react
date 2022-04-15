@@ -24,18 +24,63 @@
   --dark-neutral-Light-Grayish-Blue: hsl(234, 39%, 85%);
   --dark-neutral-Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
   --dark-neutral-Dark-Grayish-Blue: hsl(234, 11%, 52%);
-  --dark-neutral-Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --dark-neutral-Very-Dark-Grayish-Blue-1: hsl(233, 14%, 35%);
   --dark-neutral-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
 
 
+  --logo-text: var(--light-neutral-Light-Grayish-Blue);
+  --background-color: var(--light-neutral-Very-Light-Grayish-Blue);
+  --completed-text-color: var(--light-neutral-Dark-Grayish-Blue);
+  --todo-text-color: var(--light-neutral-Very-Dark-Grayish-Blue);
+  --shadow-color: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-color: var(--light-neutral-Dark-Grayish-Blue);
+  --todo-check-border-color: var(--light-neutral-Light-Grayish-Blue);
+  --todo-item-background: white;
+  --todo-input: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-hover: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-upper: var(--light-neutral-Dark-Grayish-Blue);
+  --cross-icon: var(--light-neutral-Very-Dark-Grayish-Blue);
+  --item-border-bottom: #979797;
 }
+
+body.dark {
+
+  --logo-text: var(--dark-neutral-Light-Grayish-Blue);
+  --background-color: var(--dark-neutral-Very-Dark-Blue);
+  --completed-text-color: var(--dark-neutral-Very-Dark-Grayish-Blue);
+  --todo-text-color: var(--dark-neutral-Light-Grayish-Blue);
+  --shadow-color: var(--dark-neutral-Light-Grayish-Blue);
+  --filter-text-color: var(--dark-neutral-Dark-Grayish-Blue);
+  --todo-check-border-color: var(--dark-neutral-Very-Dark-Blue);
+  --todo-item-background: var(--dark-neutral-Very-Dark-Desaturated-Blue);
+  --todo-input: var(--dark-neutral-Dark-Grayish-Blue);
+  --filter-text-hover: var(--dark-neutral-Light-Grayish-Blue-hover);
+  --filter-text-upper: var(--light-neutral-Dark-Grayish-Blue);
+  --cross-icon: var(--dark-neutral-Very-Dark-Grayish-Blue);
+  --item-border-bottom: #979797;
+
+}
+
+/* body {
+
+  --logo-text: var(--light-neutral-Light-Grayish-Blue);
+  --background-color: var(--light-neutral-Very-Light-Grayish-Blue);
+  --completed-text-color: var(--light-neutral-Dark-Grayish-Blue);
+  --todo-text-color: var(--light-neutral-Very-Dark-Grayish-Blue);
+  --shadow-color: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-color: var(--light-neutral-Dark-Grayish-Blue);
+  --todo-check-border-color: var(--light-neutral-Light-Grayish-Blue);
+  --todo-item-background: white;
+  --todo-input: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-hover: var(--light-neutral-Dark-Grayish-Blue);
+  --filter-text-upper: var(--light-neutral-Dark-Grayish-Blue);
+  --cross-icon: var(--light-neutral-Very-Dark-Grayish-Blue);
+  --item-border-bottom: #979797;
+
+} */
 
 html {
   font-size: 62.5%;
   font-family: 'Josefin Sans';
-
   overflow: auto;
 }
-
-
-.light_theme {}

@@ -28,7 +28,7 @@
     line-height: 4rem;
     letter-spacing: 1.5rem;
     text-align: left;
-    color: white;
+    color: var(--logo-text);
 }
 
 .theme_icon {
@@ -43,12 +43,12 @@
     padding: 2rem 2.4rem 2rem 2.4rem;
     display: flex;
     flex-direction: row;
-    color: var(--light-neutral-Light-Grayish-Blue);
+    color: var(--todo-input);
     column-gap: 2.4rem;
-    background-color: white;
+    background-color: var(--todo-item-background);
     box-shadow: 0rem 3.5rem 5rem -1.5rem rgba(194, 195, 214, 0.5);
     border-radius: 0.5rem;
-    border-bottom: 0.2rem solid var(--light-neutral-Light-Grayish-Blue);
+    border-bottom: 0.2rem solid var(--shadow-color);
 }
 
 .inputRadio {
@@ -68,7 +68,7 @@
 }
 
 .inputRadio:hover {
-    border-color: #8d92f6;
+    border-color: var(--primary-Bright-Blue);
 }
 
 .inputText {
@@ -82,6 +82,7 @@
     letter-spacing: -0.25px;
     text-align: left;
     font-family: "Josefin Sans";
+    color: var(--todo-input);
 
 }
 

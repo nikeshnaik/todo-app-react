@@ -5,7 +5,7 @@
     font-size: 1.8rem;
     line-height: 1.8rem;
     letter-spacing: -0.25px;
-    color: var(--light-neutral-Very-Dark-Grayish-Blue);
+    color: var(--todo-text-color);
 
 }
 
@@ -17,8 +17,8 @@
     width: 54rem;
     height: 2.4rem;
     align-items: center;
-    border-bottom: 0.2rem solid var(--light-neutral-Light-Grayish-Blue);
-    background-color: var(--light-neutral-Very-Light-Gray);
+    border-bottom: 0.00085rem solid var(--item-border-bottom);
+    background-color: var(--todo-item-background);
     cursor: pointer;
 
 }
@@ -27,11 +27,10 @@
     width: 2.2rem;
     height: 2.2rem;
     border-radius: 50%;
-    border-color: var(--light-neutral-Light-Grayish-Blue);
+    border-color: var(--item-border-bottom);
     border-width: 0.1rem;
     border-style: solid;
     cursor: pointer;
-
 }
 
 .inputRadio_checked {
@@ -42,7 +41,7 @@
 }
 
 .inputRadio:hover {
-    border-color: #8d92f6;
+    border-color: var(--primary-Bright-Blue);
 }
 
 
@@ -62,7 +61,7 @@
     letter-spacing: -0.25px;
     text-decoration-line: line-through;
 
-    color: var(--light-neutral-Light-Grayish-Blue);
+    color: var(--completed-text-color);
     /* text-decoration: line-through; */
     animation: 0s 2s;
 }

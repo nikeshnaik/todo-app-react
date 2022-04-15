@@ -11,10 +11,12 @@
     background-image: url(../assets/bg-desktop-light.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 30rem;
+    background-color: var(--background-color);
 }
 
 .dark_theme {
     background-image: url(../assets/bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 30rem;
+    background-color: var(--background-color);
 }

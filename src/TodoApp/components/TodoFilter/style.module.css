@@ -6,7 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: var(--todo-item-background);
     column-gap: 1.8rem;
     font-family: 'Josefin Sans';
     font-style: normal;
@@ -14,52 +14,32 @@
     font-size: 1.4rem;
     line-height: 1.4rem;
     letter-spacing: -0.194444px;
-    color: #9495A5;
     cursor: pointer;
 }
 
-.all {
-    color: #9495A5
-}
-
-.all:hover {
-    color: #494C6B;
-}
-
-.active {
-    color: #9495A5
-}
-
-.active:hover {
-    color: #494C6B
-}
-
+.all,
+.active,
 .completed {
-    color: #9495A5
+    color: var(--filter-text-color);
 }
 
+.all:hover,
+.active:hover,
 .completed:hover {
-    color: #494C6B;
+    color: var(--filter-text-hover);
 }
 
 
-.all_active {
-    color: #3A7CFD;
-}
-
-.active_active {
-    color: #3A7CFD;
-
-}
-
+.all_active,
+.active_active,
 .completed_active {
-    color: #3A7CFD;
+    color: var(--primary-Bright-Blue);
 }
-
 
 .item_count,
 .clear_completed {
     margin: auto;
+    color: var(--filter-text-upper);
 }
 
 
@@ -68,7 +48,7 @@
     height: 5.4rem;
     display: flex;
     flex-direction: row;
-    background-color: white;
+    background-color: var(--todo-item-background);
     justify-content: space-between;
     padding: 2rem;
     align-items: center;
@@ -78,6 +58,5 @@
     font-size: 1.4rem;
     line-height: 1.4rem;
     letter-spacing: -0.194444px;
-    color: #9495A5;
     cursor: pointer;
 }

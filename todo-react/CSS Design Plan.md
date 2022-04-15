@@ -28,5 +28,12 @@ Since its not CSS heavy project.
 3. Completed Cross line Todo Item
 
 
+#### Theme Changing
+
+1. Theme Change effects: 
+    1. Text Color of TodoItem to white
+    2. Text Color of TodoFilter to dark
+    3. Text Color, TodoItem Completed text
+    4. Background Color to black
 
 
