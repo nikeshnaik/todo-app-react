@@ -67,3 +67,20 @@ html {
   font-family: 'Josefin Sans';
   overflow: auto;
 }
+
+
+@media only screen and (max-width: 350px) {
+
+
+  html {
+    font-size: 30%;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}
