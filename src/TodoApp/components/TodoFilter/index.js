@@ -10,38 +10,45 @@ function TodoFilter(props) {
     function handleOnClick(event) {
 
         if (event.currentTarget.className === styles.all) {
-            console.log(event.currentTarget)
-            let oldState = props.state
-            oldState.filter = "all"
+            let newState = {
+                ...props.state,
+                filter: "all"
+            }
             setFilterState([true, false, false])
-            props.setState({ ...oldState })
+            props.setState(newState)
         }
         else if (event.currentTarget.className === styles.active) {
-            console.log(event.currentTarget)
-            let oldState = props.state
-            oldState.filter = "active"
+            let newState = {
+                ...props.state,
+                filter: "active"
+            }
             setFilterState([false, true, false])
-            props.setState({ ...oldState })
+            props.setState(newState)
 
         }
         else if (event.currentTarget.className === styles.completed) {
-            console.log(event.currentTarget)
-            let oldState = props.state
-            oldState.filter = "completed"
+            let newState = {
+                ...props.state,
+                filter: "completed"
+            }
             setFilterState([false, false, true])
-            props.setState({ ...oldState })
+            props.setState(newState)
         }
         else if (event.currentTarget.className === styles.clear_completed) {
 
-            let oldTodoList = props.todolist
+            let oldTodoList = [...props.todolist]
 
             let activeTodoList = oldTodoList.filter((element) => element.status === "active")
 
             props.setTodolist([...activeTodoList])
 
-            let newStateTodoList = props.state.todolist.filter((element) => element.status === "active")
+            let newStateTodoList = [...props.state.todolist].filter((element) => element.status === "active")
             props.state.todolist = newStateTodoList
-            props.setState({ ...props.state })
+            let newState = {
+                ...props.state,
+                todolist: newStateTodoList
+            }
+            props.setState(newState)
 
 
         }

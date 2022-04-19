@@ -4,7 +4,7 @@ import TodoItem from '../../components/TodoItem'
 import { ReactSortable } from "react-sortablejs";
 
 import styles from './style.module.css'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TodoFilter from '../../components/TodoFilter';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -28,13 +28,11 @@ function ToDoLayout(props) {
                 "status": status,
                 "description": description
             }
-            console.log(newTodo)
 
-
-            props.state.todolist.push(newTodo)
+            props.state.todolist.concat(newTodo)
             props.setState({ ...props.state })
 
-            todolist.push(newTodo)
+            todolist.concat(newTodo)
             setTodolist([...todolist])
 
             event.target.value = ""
@@ -63,10 +61,10 @@ function ToDoLayout(props) {
             }
             console.log(newTodo)
 
-            props.state.todolist.push(newTodo)
+            props.state.todolist.concat(newTodo)
             props.setState({ ...props.state })
 
-            todolist.push(newTodo)
+            todolist.concat(newTodo)
             setTodolist([...todolist])
 
             setTimeout(() => {
@@ -83,7 +81,7 @@ function ToDoLayout(props) {
 
     function handleThemeChange(event) {
 
-        let oldState = props.state
+        let oldState = { ...props.state }
         oldState.theme = oldState.theme === "light" ? "dark" : "light"
         props.setState({ ...oldState })
 
@@ -93,7 +91,7 @@ function ToDoLayout(props) {
     return (
         <div className={styles.container}>
             <div className={styles.layout_header}>
-                <h2 role="heading">TODO</h2>
+                <h2 >TODO</h2>
                 <div className={styles.theme_icon} onClick={handleThemeChange}>
                     {props.state.theme === "dark" ? <ThemeMoonIcon /> : <ThemeSunIcon />}
                 </div>

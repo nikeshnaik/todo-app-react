@@ -27,12 +27,12 @@ function TodoItem(props) {
 
                 console.log("State Change triggered")
 
-                let oldState = state
+                let oldState = { ...state }
                 let indexOftodo = oldState.todolist.findIndex(item => item.id === todoId)
                 oldState.todolist[indexOftodo].status = "completed"
                 setState({ ...oldState })
 
-                let oldTodoList = todolist
+                let oldTodoList = { ...todolist }
                 indexOftodo = oldTodoList.findIndex(item => item.id === todoId)
                 oldTodoList[indexOftodo].status = "completed"
                 setTodoList([...oldTodoList])
@@ -52,11 +52,15 @@ function TodoItem(props) {
 
             let [state, setState, todolist, setTodoList] = props.state_obj
 
-            state.todolist.splice(state.todolist.findIndex(item => item.id === todoId), 1)
-            setState({ ...state })
+            let oldState = { ...state }
+            oldState.todolist.splice(oldState.todolist.findIndex(item => item.id === todoId), 1)
 
-            todolist.splice(todolist.findIndex(item => item.id === todoId), 1)
-            setTodoList([...todolist])
+            setState(oldState)
+
+            let oldTodoList = [...todolist]
+
+            oldTodoList.splice(oldTodoList.findIndex(item => item.id === todoId), 1)
+            setTodoList(oldTodoList)
             setShowCrossBtn(false)
         }
     }
